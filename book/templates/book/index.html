@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Dose of Voice</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400, 600');
+.logo{
+  margin-left: 1.5em;
+  width: 80px;
+}
+.bg{
+  background-color: #eee256;
+}
+.menu{
+  width: 30px;
+  margin-top: 40%;
+  margin-right: 30px;
+}
+.scroll{
+  width: 30px;
+  height: 40px;
+}
+img{
+  width: 200px;
+}
+img.exit{
+  width: 25px;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+p, blockquote{
+  font-size: .9em;
+  line-height: 1.9em;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  text-align: center;
+  padding: .8em 1.2em 2em 40;
+}
+.hide-mobile{
+  display: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.server{
+  width: 30%;
+  margin: 2em;
+}
+h1, .subhead{
+  position: relative;
+  z-index: 3;
+}
+.subhead{
+  font-size: 1.1em;
+}
+.blue-container{
+  width: 100%;
+  background: #00C2FF;
+  color: #fff;
+  margin-top: -1%;
+  padding: 4em 0 2em;
+  border-top-left-radius: 40px;
+  transform: skewY(-3deg);
+}
+.blue-container:before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #00C2FF;
+  position: absolute;
+  top: -39px;
+  right: 0;
+  z-index: -2;
+}
+.blue-container:after{
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  top: -80px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blue-container ul{
+  transform: skewY(2deg);
+}
+.blue-container ul li{ 
+  margin-bottom: 3em;
+}
+.blue-container ul li p{
+  padding: 0 .5em;
+}
+.blue-container img{
+  width: 20%;
+}
+.blue-container ul li:nth-child(3) img{
+  width: 19%;
+}
+.gray-container{
+  background: #F6F6F6;
+  padding: 4em 0 2em;
+  margin-top: -3%;
+}
+.gray-container ul li:first-child{
+  margin-bottom: 3em;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+figcaption{
+  font-weight: bold;
+  color: #00C2FF;
+}
+h2{
+  margin-top: 7%;
+}
+.cta{
+  background: #00CC80;
+  width: calc(100% - 1em);
+  display: block;
+  color: #fff;
+  border-radius: 20px;
+  padding: .5em;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 3% auto 7%;
+  position: relative;
+  z-index: 4;
+}
+.footer-container{
+  width: 100%;
+  background: #3D44AA;
+  color: #fff;
+  padding: 3em 0;
+  border-top-right-radius: 40px;
+  transform: skewY(2deg);
+}
+.footer-container .container{
+  transform: skewY(-2deg);
+}
+.footer-container:before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #3D44AA;
+  position: absolute;
+  top: -39px;
+  z-index: -2;
+}
+.footer-container:after{
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  top: -80px;
+  left: 0;
+  border-radius: 50%;
+}
+ul.footer-links{
+  margin: 0 auto;
+}
+ul.footer-links li{
+  display: inline-block;
+}
+ul.footer-links li a{
+  color: #fff;
+  font-size: .8rem;
+}
+img{
+  width: 50px;
+}
+.bg1{
+  width: 90px;
+}
+    </style>
+  </head>
+  <body>
+<div class="container" >
+    <!-- Header -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand" href="#"><img src="https://cdn0.iconfinder.com/data/icons/learning-icons-rounded/110/Owl-Book-512.png"/></a>
+  <a class="navbar-brand" href="{% url 'book:book_list' %}">Voice of Books</a>
+</nav>
+    <!-- End of Header -->
+    <!-- Body -->
+    <section class="bg">
+      <img src="https://cdn2.iconfinder.com/data/icons/scenarium-vol-2-1/128/039_advice_knowledge_know_how_light_bulb_book-512.png" class="server">
+      <h2>
+        
+     Voice of Books
+
+      </h2>
+      <p class="subhead">စာအုပ်တွေဟာသင့်သူငယ်ချင်းတွေပါ<br> စာဖတ်ခြင်းဖြင့်သင့်ဘ၀ကိုမြှင့်တင်ပါ</p>
+      <br>
+      <img src="images/scroll.png" class="scroll hide-mobile show-desktop">
+    </section>
+    <!-- End of Body -->
+  </div>
+  <div class="blue-container">
+  <div class="row">
+    
+  </div>
+    <div class="container">
+      <ul>
+        
+        <li>
+          <img src="https://media.istockphoto.com/vectors/color-audiobook-icon-in-flat-vector-illustration-vector-id1175232377?b=1&k=6&m=1175232377&s=170x170&h=yE1HorQzhxs1GUIHKkZqaR0-gh5KUwLv_B8Te4uk1xQ="><br><br>
+          <h4>အသံဖြင့်နားဆင်နိုင်သည်</h4>
+        </li>
+        <li>
+          <a href="#">
+          <img src="https://cdn3.iconfinder.com/data/icons/people-activities-scenes/64/reading-256.png"><br>
+          </a><h4>မျက်စိဖြင့် ဖတ်နိုင်သည်</h4>
+        </li>
+        <li>
+          <h4>စာဖတ်ခြင်းအလေ့အကျင့်ရပြီး<br> ဗဟုသုတတိုးပွားစေမည်</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <h3>စာအုပ်များကြည့်ရန်</h3><br>
+    <a href="{% url 'book:book_list' %}" class="cta">နှိပ်ပါ</a>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="container">
+        <a href="#" class="">
+          <img src="https://cdn4.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_Myanmar_-_Circle-128.png" class="logo">
+        </a>
+        <a href="#" class="">
+          <img src="https://cdn3.iconfinder.com/data/icons/cloud-computing-10/112/18-cloud-computing_cloud-transfer-512.png" class="logo">
+        </a>
+        <a href="#" class="">
+          <img src="https://cdn4.iconfinder.com/data/icons/flat-circle-flag/182/circle_flag_japan-512.png" class="logo">
+        </a>
+        <p class="address">KDDI Project</p>
+        <ul class="footer-links">
+          <li><a href="#">By Team Suicide Squad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
